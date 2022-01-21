@@ -1,7 +1,12 @@
 import React from "react";
+import styles from "./Button.css";
 
-function Button() {
-  return <div>Test</div>;
+interface ButtonProps {
+  label: string;
 }
+
+const Button: React.FC<ButtonProps> = ({ label }) => {
+  return <div className={styles.btn}>{label}</div>;
+};
 
 export default Button;

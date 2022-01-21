@@ -1,0 +1,8 @@
+.a {
+  color: blue;
+}
+.btn {
+  composes: a;
+  font-size: 20px;
+  /* color: red; */
+}
